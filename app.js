@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('<h1>peticion recibida con nodemon<h1>');
+  console.log('peticion recibida');
+  res.status(200).send('<h1>peticion recibida hola mundo</h1>');
+  
 });
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
