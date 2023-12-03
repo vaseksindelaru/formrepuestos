@@ -4,7 +4,7 @@ require('dotenv').config()
 const app = express();
 app.get('/', (req, res) => {
   console.log('peticion recibida');
-  res.status(200).send('<h1> recibida  mundo</h1>');
+  res.status(200).send('<h1>ffffffff recibida  mundo</h1>');
   
 });
 const PORT = process.env.PORT || 3000 ;
