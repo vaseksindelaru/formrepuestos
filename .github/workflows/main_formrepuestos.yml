@@ -42,7 +42,7 @@ jobs:
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-    
+
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
@@ -51,16 +51,12 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
-      
+
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'formrepuestos'
           slot-name: 'Production'
-<<<<<<< HEAD
-=======
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0F5927CC022A4D35B50837B8AE30DC68 }}
->>>>>>> fb3c1adc02c23fda7e973299c80be6914cb93beb
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3934FE236E26498091C09C5FA22B8221 }}
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_03E545FF02B2430E90E9D70241E6D9DB }}
