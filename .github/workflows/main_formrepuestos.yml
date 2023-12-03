@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'formrepuestos'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_21C05F3B1C4D497FBFFA5252E3A54C42 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0F5927CC022A4D35B50837B8AE30DC68 }}
           package: .
