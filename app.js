@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.status(200).send('<h1>fffff ggoggrecibida  mundo</h1>');
   
 });
-const PORT = process.env.PORT || 3000 ;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Escuchando en el puerto ${PORT}`);
 });
